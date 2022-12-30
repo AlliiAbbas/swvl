@@ -117,7 +117,7 @@
     width: 330px;
   }
 }
-@media (max-width: 435px) {
+@media (max-width: 480px) {
   .conFive {
     height: 1000px;
   }

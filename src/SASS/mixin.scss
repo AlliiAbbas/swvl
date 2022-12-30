@@ -34,7 +34,7 @@
 }
 
 @mixin mobileL {
-    @media  (max-width:435px) {
+    @media  (max-width:480px) {
         @content;
         
     }
