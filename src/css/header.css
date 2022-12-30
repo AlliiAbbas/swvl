@@ -13,7 +13,8 @@
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
   position: relative;
 }
 .header .video {
@@ -376,7 +377,6 @@
 @media (max-width: 480px) {
   .header {
     height: 450px;
-    overflow: visible;
   }
   .header .navCon .nav .icon {
     top: 30px;
@@ -389,6 +389,12 @@
     height: 450px;
   }
   .header .navCon .barOff .top a, .header .navCon .barOn .top a, .header .navCon .barOff .down a, .header .navCon .barOn .barOff .down a, .header .navCon .barOff .barOn .down a, .header .navCon .barOn .down a, .header .navCon .barOn .top a, .header .navCon .barOn .down a, .header .navCon .barOff .down a, .header .navCon .barOn .down a, .header .navCon .barOn .down a {
-    font-size: 25px;
+    font-size: 14.3px;
+  }
+  .header .navCon .barOff button, .header .navCon .barOn button, .header .navCon .barOn button {
+    height: 60px;
+  }
+  .conFour .carousel .control-dots {
+    left: 125px;
   }
 }

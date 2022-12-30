@@ -203,6 +203,10 @@
             height: 80VH;
         }
     }
+    .conFour .carousel .control-dots{
+        bottom: 0px;
+        left: -250px;
+    }
 }
 
 @include mobileL {

@@ -204,6 +204,10 @@
   .conFour .caro .partOne {
     height: 80VH;
   }
+  .conFour .carousel .control-dots {
+    bottom: 0px;
+    left: -250px;
+  }
 }
 @media (max-width: 480px) {
   .conFour .top h1 {
