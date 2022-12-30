@@ -136,6 +136,16 @@
   .conFive .containerFive .right h2:after {
     bottom: -100px;
   }
+  .conFive .containerFive p {
+    font-size: 20px;
+  }
+  .conFive .containerFive .right h2 {
+    font-size: 40px;
+  }
+  .conFive .containerFive a {
+    width: 150px;
+    height: 50px;
+  }
 }
 @media (max-width: 320px) {
   .conFive .containerFive p {
@@ -143,5 +153,10 @@
   }
   .conFive .containerFive .right h2 {
     font-size: 35px;
+  }
+}
+@media (max-width: 376px) {
+  .conFive .containerFive p {
+    font-size: 17px;
   }
 }
