@@ -87,7 +87,7 @@
     width: 200px;
   }
 }
-@media (max-width: 426px) {
+@media (max-width: 435) {
   .conThree {
     height: 1550px;
     -webkit-box-align: start;

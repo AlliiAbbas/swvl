@@ -84,7 +84,7 @@
     min-width: 400px;
   }
 }
-@media (max-width: 426px) {
+@media (max-width: 435) {
   .conOne {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

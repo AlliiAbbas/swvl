@@ -30,7 +30,7 @@
     font-size: 40px;
   }
 }
-@media (max-width: 426px) {
+@media (max-width: 435px) {
   .conTwo h1 {
     font-size: 30px;
   }
