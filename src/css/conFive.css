@@ -146,6 +146,9 @@
     width: 150px;
     height: 50px;
   }
+  .conFour .carousel .control-dots {
+    left: 127px;
+  }
 }
 @media (max-width: 320px) {
   .conFive .containerFive p {
