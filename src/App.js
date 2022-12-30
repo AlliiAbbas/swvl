@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       
       <Routes>
-        <Route path="/" element={<SwvlEnglish />} />
+        <Route path="/swvl" element={<SwvlEnglish />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </div>

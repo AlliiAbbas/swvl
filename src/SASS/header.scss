@@ -99,7 +99,10 @@
                 width: 90%;
                 padding: 5px;
                 
-                a{
+                span
+                {
+                display: flex;
+                flex-direction: column;
                 background-color: #ff496873;
                 padding: 10px;
                 text-decoration: none;

@@ -1,4 +1,5 @@
 import React, { useLayoutEffect, useState } from 'react'
+import { ExternalLink } from 'react-external-link'
 import { FaBars } from 'react-icons/fa'
 import { useDispatch, useSelector } from 'react-redux'
 import {  NavLink } from 'react-router-dom'
@@ -64,8 +65,8 @@ export default function Header() {
           <NavLink to=""  className="menu">HOME</NavLink>
           <NavLink to="/daily" className="menu">DAILY</NavLink>
           <NavLink to="/travel" className="menu">TRAVEL</NavLink>
-          <NavLink to="/ptivate-bus" className="menu" onMouseMove={handlPrOn} onMouseLeave={handlPrOff}> <div className={privte ? "prOff" : "prOn"}><NavLink to="">Egypt</NavLink><NavLink to="">PAKISTAN</NavLink></div>PRIVATE BUS</NavLink>
-          <NavLink to="/business" className="menu" onMouseMove={handlBuOn} onMouseLeave={handlBuOff}> <div className={business ? "prOff" : "prOn"}><NavLink to="">BLOG</NavLink></div> BUSINESS</NavLink>
+          <NavLink to="/ptivate-bus" className="menu" onMouseMove={handlPrOn} onMouseLeave={handlPrOff}> <div className={privte ? "prOff" : "prOn"}><span to="">Egypt</span><span to="">PAKISTAN</span></div>PRIVATE BUS</NavLink>
+          <NavLink to="/business" className="menu" onMouseMove={handlBuOn} onMouseLeave={handlBuOff}> <div className={business ? "prOff" : "prOn"}><span to="">BLOG</span></div> BUSINESS</NavLink>
           <NavLink to="/captains" className="menu">CAPTAINS</NavLink>
           <NavLink to="/people" className="menu">PEOPLE</NavLink>
           <NavLink to="/investors" className="menu">INVESTORS</NavLink>
@@ -100,7 +101,7 @@ export default function Header() {
             </div>
       </div>
       <div className='footer'>
-        <a href="https://apps.apple.com/app/id1214486024?mt=8" target="_blank" rel="noreferrer">DOWNLOAD</a>
+        <ExternalLink  href="https://apps.apple.com/app/id1214486024?mt=8" target="_blank" rel="noreferrer">DOWNLOAD</ExternalLink >
       </div>
     </div>
   )
