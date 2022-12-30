@@ -39,7 +39,7 @@
   background-color: #fc153b;
   width: 37%;
   position: relative;
-  padding: 20px 0 30px 80px;
+  padding: 0px 0 0px 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -56,6 +56,7 @@
 }
 .conFour .caro .partOne .descriptionOne .img1, .conFour .caro .partOne .descriptionThree .img1, .conFour .caro .partOne .descriptionTwo .img1 {
   width: 250px;
+  padding-top: 30px;
 }
 .conFour .caro .partOne .descriptionOne p, .conFour .caro .partOne .descriptionThree p, .conFour .caro .partOne .descriptionTwo p {
   color: white;
@@ -65,6 +66,7 @@
 }
 .conFour .caro .partOne .descriptionOne .img2, .conFour .caro .partOne .descriptionThree .img2, .conFour .caro .partOne .descriptionTwo .img2 {
   width: 150px;
+  padding-bottom: 50px;
 }
 .conFour .caro .partOne .descriptionOne::before, .conFour .caro .partOne .descriptionThree::before, .conFour .caro .partOne .descriptionTwo::before {
   content: "";

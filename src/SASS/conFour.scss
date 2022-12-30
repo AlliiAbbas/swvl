@@ -25,23 +25,26 @@
     }
     .caro{
        width: 100%;
+       
+       
         .partOne{
             height: 100vh;
             display: flex;
 
-            
             .descriptionOne{
                 background-color: $mainColor;
                 width: 37%;
                 position: relative;
-                padding:20px 0 30px 80px;
+                padding:0px 0 0px 80px;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
                 align-items: flex-start;
                 
+                
                 .img1{
                     width:250px;
+                    padding-top: 30px;
                 }
                 p{
                     color: white;
@@ -51,6 +54,7 @@
                 }
                 .img2{
                     width: 150px;
+                    padding-bottom: 50px;
                 }
                 &::before{
                 content: "";
