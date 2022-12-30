@@ -1,0 +1,47 @@
+.conTwo {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+.conTwo h1 {
+  text-align: center;
+  width: 80%;
+  font-size: 80px;
+  padding: 15px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+@media (max-width: 1024px) {
+  .conTwo h1 {
+    width: 100%;
+    font-size: 60px;
+  }
+}
+@media (max-width: 768px) {
+  .conTwo h1 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 426px) {
+  .conTwo h1 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 376px) {
+  .conTwo h1 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 320px) {
+  .conOne .oneRight img {
+    min-width: 350px;
+  }
+}

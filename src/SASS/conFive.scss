@@ -1,0 +1,106 @@
+@use './var.scss' as *; 
+@use './mixin.scss' as * ;
+
+.conFive{
+    @include center;
+    height: 100vh;
+    overflow: hidden;
+    .containerFive{
+        @include center;
+        justify-content: flex-start;
+        width: 80%;
+        height: 100%;
+        .left{
+            img{
+                width: 500px;
+            }
+        }
+        .right{
+            height: 95%;
+            margin-left: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            h2{
+                font-size: 80px;
+                font-family: $font;
+                position: relative;
+                &:after{
+                    background-color: #fc153b;
+                    position: absolute;
+                    bottom: -163px;
+                    left: 0;
+                    margin-bottom: 70px;
+                    content: "";
+                    width: 130px;
+                    height: 20px;
+                    }
+                }
+
+            }
+            p{
+             font-size: 36px;
+             font-size: 28px;
+             margin-bottom: 79px;
+             margin-top: 140px;
+             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+
+            a{
+                @include downloadButtomStyle;
+                margin-bottom: 30px;
+            }
+           
+            
+        }
+    }
+  @include sLabtop{
+    .conFive .containerFive .left img{
+        width: 390px;
+    }
+    .conFive .containerFive .right h2{
+        font-size: 45px;
+    }
+    .conFive .containerFive .right{
+        justify-content: space-around;
+    }
+    .conFive .containerFive p{
+        font-size: 22px;
+        margin: 0px;
+    }
+    .conFive .containerFive{
+        width: 100%;
+    }
+    
+  }  
+  @include tablet{
+    .conFive .containerFive .left img{
+        width: 330px;
+    }
+    
+  }
+  @include mobileL{
+    .conFive{
+        height: 1000px;
+    }
+    .conFive .containerFive{
+        flex-direction: column;
+        
+    }.conFive .containerFive .right{
+        height: 46%;
+    }
+    .conFive .containerFive .right h2:after{
+        bottom: -100px;
+    }
+  }
+  @include mobileS {
+    .conFive .containerFive p{
+        font-size: 16px;
+    }
+    .conFive .containerFive .right h2{
+        font-size: 35px;
+    }
+  }
+ 
+  

@@ -1,0 +1,233 @@
+@use './var.scss' as *; 
+@use './mixin.scss' as * ;
+
+.conFour{
+   
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0 100px 0;
+    user-select: none;overflow: hidden;
+   
+    .top{
+        
+        margin: 0 0 50px 50px;
+        
+        h1{
+            font-size: 100px;
+            font-family: $font;
+            width: 70%;
+        }
+        p{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 34px;
+            width: 71%;
+        }
+    }
+    .caro{
+       width: 100%;
+        .partOne{
+            height: 100vh;
+            display: flex;
+
+            
+            .descriptionOne{
+                background-color: $mainColor;
+                width: 37%;
+                position: relative;
+                padding:20px 0 30px 80px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
+                
+                .img1{
+                    width:250px;
+                }
+                p{
+                    color: white;
+                    font-size: 35px;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    text-align: start;
+                }
+                .img2{
+                    width: 150px;
+                }
+                &::before{
+                content: "";
+                background-color: #252bac;
+                width: 33px;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0px;
+                }
+            }
+            .descriptionTwo{
+                @extend .descriptionOne;
+                background-color: #252bac;
+                .img1{
+                    width:250px;
+                }
+                p{
+                    color: white;
+                    font-size: 35px;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    text-align: start;
+                }
+                .img2{
+                    width: 150px;
+                }
+                &::before{
+                content: "";
+                background-color: $mainColor;
+                width: 33px;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0px;
+                }
+               
+            }
+            .descriptionThree{
+                @extend .descriptionOne;
+                background-color: #24bb34;
+                .img1{
+                    width:250px;
+                }
+                p{
+                    color: white;
+                    font-size: 35px;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    text-align: start;
+                }
+                .img2{
+                    width: 150px;
+                }
+                &::before{
+                content: "";
+                background-color: #252bac;
+                width: 33px;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0px;
+                }
+               
+
+            }
+            .imgFooter{
+                position: relative;
+                overflow: hidden;
+                img{
+                    height: 100%;
+                    width: 125%;
+                    
+                }
+            }
+            .imgFooterTwo {
+                position: relative;
+                overflow: hidden;
+                img{
+                    height: 100%;
+                    width: 100%;
+                
+                }
+
+            }
+        }
+
+    }
+    .carousel .control-dots{
+        left: -370px;
+        bottom: 60px;
+        
+    }
+    .carousel .control-dots .dot {
+        box-shadow:none;
+        width: 16px;
+        height: 16px;
+        background-color: rgba(0, 0, 0, 0);
+        border: 2px solid white;
+        
+    }
+    .carousel .control-dots .dot.selected {
+        box-shadow:none;
+        width: 16px;
+        height: 16px;
+        border: none;
+        background-color: white;
+        
+    }
+}
+@include tablet{
+    .conFour .caro{
+        height: 60VH;
+        .partOne{
+            height: 60VH;
+        }
+    }
+  }
+@include sLabtop{
+    .conFour .top h1{
+        font-size: 55px;
+        width: 100%;
+    }
+    .conFour .top p{
+        font-size: 22px;
+        width: 100%;
+    }
+    .conFour .caro .partOne .descriptionOne .img1 {
+        width: 130px;
+    }
+    .conFour .caro .partOne .descriptionOne p{
+        font-size: 20px;
+    }
+    .conFour .caro .partOne .descriptionTwo .img1 {
+        width: 130px;
+    }
+    .conFour .caro .partOne .descriptionTwo p{
+        font-size: 20px;
+    }
+    .conFour .caro .partOne .descriptionThree .img1 {
+        width: 130px;
+    }
+    .conFour .caro .partOne .descriptionThree p{
+        font-size: 20px;
+    }
+    .conFour .carousel .control-dots{
+        left: -258px;
+    }
+    .conFour .caro{
+        height: 80VH;
+        .partOne{
+            height: 80VH;
+        }
+    }
+}
+
+@include mobileL {
+    .conFour .top h1{
+        font-size: 30px;
+    }.conFour .top p{
+        font-size: 16px;
+    }
+    .conFour .caro .partOne .imgFooter{
+        position: absolute;
+        display: none;
+    }
+    .conFour .caro .partOne .imgFooterTwo{
+        position: absolute;
+        display: none;
+    }
+    .conFour .caro .partOne .descriptionOne{
+        width: 100%;
+    }
+    .conFour .carousel .control-dots{
+        left: 180px;
+    }
+}
+@include mobileS {
+    .conFour .carousel .control-dots{
+        left: 100px;
+    }
+}

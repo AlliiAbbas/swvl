@@ -1,0 +1,234 @@
+.conFour {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 50px 0 100px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  overflow: hidden;
+}
+.conFour .top {
+  margin: 0 0 50px 50px;
+}
+.conFour .top h1 {
+  font-size: 100px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  width: 70%;
+}
+.conFour .top p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 34px;
+  width: 71%;
+}
+.conFour .caro {
+  width: 100%;
+}
+.conFour .caro .partOne {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.conFour .caro .partOne .descriptionOne, .conFour .caro .partOne .descriptionThree, .conFour .caro .partOne .descriptionTwo {
+  background-color: #fc153b;
+  width: 37%;
+  position: relative;
+  padding: 20px 0 30px 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.conFour .caro .partOne .descriptionOne .img1, .conFour .caro .partOne .descriptionThree .img1, .conFour .caro .partOne .descriptionTwo .img1 {
+  width: 250px;
+}
+.conFour .caro .partOne .descriptionOne p, .conFour .caro .partOne .descriptionThree p, .conFour .caro .partOne .descriptionTwo p {
+  color: white;
+  font-size: 35px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: start;
+}
+.conFour .caro .partOne .descriptionOne .img2, .conFour .caro .partOne .descriptionThree .img2, .conFour .caro .partOne .descriptionTwo .img2 {
+  width: 150px;
+}
+.conFour .caro .partOne .descriptionOne::before, .conFour .caro .partOne .descriptionThree::before, .conFour .caro .partOne .descriptionTwo::before {
+  content: "";
+  background-color: #252bac;
+  width: 33px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0px;
+}
+.conFour .caro .partOne .descriptionTwo {
+  background-color: #252bac;
+}
+.conFour .caro .partOne .descriptionTwo .img1 {
+  width: 250px;
+}
+.conFour .caro .partOne .descriptionTwo p {
+  color: white;
+  font-size: 35px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: start;
+}
+.conFour .caro .partOne .descriptionTwo .img2 {
+  width: 150px;
+}
+.conFour .caro .partOne .descriptionTwo::before {
+  content: "";
+  background-color: #fc153b;
+  width: 33px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0px;
+}
+.conFour .caro .partOne .descriptionThree {
+  background-color: #24bb34;
+}
+.conFour .caro .partOne .descriptionThree .img1 {
+  width: 250px;
+}
+.conFour .caro .partOne .descriptionThree p {
+  color: white;
+  font-size: 35px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: start;
+}
+.conFour .caro .partOne .descriptionThree .img2 {
+  width: 150px;
+}
+.conFour .caro .partOne .descriptionThree::before {
+  content: "";
+  background-color: #252bac;
+  width: 33px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0px;
+}
+.conFour .caro .partOne .imgFooter {
+  position: relative;
+  overflow: hidden;
+}
+.conFour .caro .partOne .imgFooter img {
+  height: 100%;
+  width: 125%;
+}
+.conFour .caro .partOne .imgFooterTwo {
+  position: relative;
+  overflow: hidden;
+}
+.conFour .caro .partOne .imgFooterTwo img {
+  height: 100%;
+  width: 100%;
+}
+.conFour .carousel .control-dots {
+  left: -370px;
+  bottom: 60px;
+}
+.conFour .carousel .control-dots .dot {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  width: 16px;
+  height: 16px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid white;
+}
+.conFour .carousel .control-dots .dot.selected {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  width: 16px;
+  height: 16px;
+  border: none;
+  background-color: white;
+}
+
+@media (max-width: 768px) {
+  .conFour .caro {
+    height: 60VH;
+  }
+  .conFour .caro .partOne {
+    height: 60VH;
+  }
+}
+@media (max-width: 1024px) {
+  .conFour .top h1 {
+    font-size: 55px;
+    width: 100%;
+  }
+  .conFour .top p {
+    font-size: 22px;
+    width: 100%;
+  }
+  .conFour .caro .partOne .descriptionOne .img1, .conFour .caro .partOne .descriptionTwo .img1, .conFour .caro .partOne .descriptionThree .img1 {
+    width: 130px;
+  }
+  .conFour .caro .partOne .descriptionOne p, .conFour .caro .partOne .descriptionTwo p, .conFour .caro .partOne .descriptionThree p {
+    font-size: 20px;
+  }
+  .conFour .caro .partOne .descriptionTwo .img1 {
+    width: 130px;
+  }
+  .conFour .caro .partOne .descriptionTwo p {
+    font-size: 20px;
+  }
+  .conFour .caro .partOne .descriptionThree .img1 {
+    width: 130px;
+  }
+  .conFour .caro .partOne .descriptionThree p {
+    font-size: 20px;
+  }
+  .conFour .carousel .control-dots {
+    left: -258px;
+  }
+  .conFour .caro {
+    height: 80VH;
+  }
+  .conFour .caro .partOne {
+    height: 80VH;
+  }
+}
+@media (max-width: 426px) {
+  .conFour .top h1 {
+    font-size: 30px;
+  }
+  .conFour .top p {
+    font-size: 16px;
+  }
+  .conFour .caro .partOne .imgFooter {
+    position: absolute;
+    display: none;
+  }
+  .conFour .caro .partOne .imgFooterTwo {
+    position: absolute;
+    display: none;
+  }
+  .conFour .caro .partOne .descriptionOne, .conFour .caro .partOne .descriptionTwo, .conFour .caro .partOne .descriptionThree {
+    width: 100%;
+  }
+  .conFour .carousel .control-dots {
+    left: 180px;
+  }
+}
+@media (max-width: 320px) {
+  .conFour .carousel .control-dots {
+    left: 100px;
+  }
+}

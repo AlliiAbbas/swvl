@@ -1,0 +1,53 @@
+@use './var.scss' as * ;
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+@mixin downloadButtomStyle {
+    width: 180px;
+    height: 60px;
+    text-decoration: none;
+    font-family: $font;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 20px;
+    @include center; 
+    width: 180px;
+    height: 60px;
+    background-color: $mainColor;
+    transition: .3s;
+    text-indent: to-upper-case($string: "");
+}
+@mixin sLabtop {
+    @media  (max-width:1024px) {
+        @content;
+        
+    }
+}
+@mixin tablet {
+    @media  (max-width:768px) {
+        @content;
+        
+    }
+}
+
+@mixin mobileL {
+    @media  (max-width:426px) {
+        @content;
+        
+    }
+}
+@mixin mobileM {
+    @media  (max-width:376px) {
+        @content;
+        
+    }
+}
+@mixin mobileS   {
+    @media  (max-width:320px) {
+        @content;
+        
+    }
+}

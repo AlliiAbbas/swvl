@@ -1,0 +1,45 @@
+@use './var.scss' as *; 
+@use './mixin.scss' as * ;
+
+.conTwo{
+    width: 100%;
+    
+    @include center;
+    overflow: hidden;
+    h1{
+        text-align: center;
+        width: 80%;
+        font-size: 80px;
+        padding: 15px; ;
+        font-family: $font;
+    }
+}
+@include sLabtop{
+    .conTwo h1{
+    width: 100%;
+    font-size: 60px;
+    }
+}
+@include tablet{
+    .conTwo h1{
+        
+        font-size: 40px;
+        }
+}
+@include mobileL {
+    .conTwo h1{
+        
+        font-size: 30px;
+        }
+}
+@include mobileM {
+    .conTwo h1{
+        
+        font-size: 20px;
+        }
+}
+@include mobileS{
+    .conOne .oneRight img{
+        min-width: 350px;
+    }
+}

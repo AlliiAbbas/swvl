@@ -1,0 +1,144 @@
+.conFive {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+.conFive .containerFive {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 80%;
+  height: 100%;
+}
+.conFive .containerFive .left img {
+  width: 500px;
+}
+.conFive .containerFive .right {
+  height: 95%;
+  margin-left: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+.conFive .containerFive .right h2 {
+  font-size: 80px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  position: relative;
+}
+.conFive .containerFive .right h2:after {
+  background-color: #fc153b;
+  position: absolute;
+  bottom: -163px;
+  left: 0;
+  margin-bottom: 70px;
+  content: "";
+  width: 130px;
+  height: 20px;
+}
+.conFive .containerFive p {
+  font-size: 36px;
+  font-size: 28px;
+  margin-bottom: 79px;
+  margin-top: 140px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.conFive .containerFive a {
+  width: 180px;
+  height: 60px;
+  text-decoration: none;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: white;
+  letter-spacing: 1px;
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 180px;
+  height: 60px;
+  background-color: #fc153b;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  text-indent: "";
+  margin-bottom: 30px;
+}
+
+@media (max-width: 1024px) {
+  .conFive .containerFive .left img {
+    width: 390px;
+  }
+  .conFive .containerFive .right h2 {
+    font-size: 45px;
+  }
+  .conFive .containerFive .right {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .conFive .containerFive p {
+    font-size: 22px;
+    margin: 0px;
+  }
+  .conFive .containerFive {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .conFive .containerFive .left img {
+    width: 330px;
+  }
+}
+@media (max-width: 426px) {
+  .conFive {
+    height: 1000px;
+  }
+  .conFive .containerFive {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .conFive .containerFive .right {
+    height: 46%;
+  }
+  .conFive .containerFive .right h2:after {
+    bottom: -100px;
+  }
+}
+@media (max-width: 320px) {
+  .conFive .containerFive p {
+    font-size: 16px;
+  }
+  .conFive .containerFive .right h2 {
+    font-size: 35px;
+  }
+}
