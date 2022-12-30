@@ -14,7 +14,7 @@ export default function ContainerFour() {
             maintain a tight ship, so to speak (aye, aye captain)
         </p>
       </div>
-      <Carousel className='caro' infiniteLoop={true} useKeyboardArrows={true} emulateTouch={true} swipeable={true} showArrows={false} showStatus={false} showThumbs={false} verticalSwipe={true}>
+      <Carousel onSwipeMove={true} className='caro' infiniteLoop={true} useKeyboardArrows={true} emulateTouch={true} swipeable={true} showArrows={false} showStatus={false} showThumbs={false} verticalSwipe={false} >
         <div className='partOne'>
           <div className='descriptionOne'>
           <img src="https://www.swvl.com/hubfs/Swvl_June2021/Images/logo.png" alt="Swvl Daily" className='img1' loading="lazy" />
