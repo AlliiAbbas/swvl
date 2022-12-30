@@ -388,6 +388,9 @@
   .header video {
     height: 450px;
   }
+  .header .video {
+    width: 1000px;
+  }
   .header .navCon .barOff .top a, .header .navCon .barOn .top a, .header .navCon .barOff .down a, .header .navCon .barOn .barOff .down a, .header .navCon .barOff .barOn .down a, .header .navCon .barOn .down a, .header .navCon .barOn .top a, .header .navCon .barOn .down a, .header .navCon .barOff .down a, .header .navCon .barOn .down a, .header .navCon .barOn .down a {
     font-size: 14.3px;
   }
