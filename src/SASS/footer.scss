@@ -8,6 +8,18 @@
     display: flex;
     margin-top: 200px;
     overflow: hidden;
+    position: relative;
+    .developed{
+        width: 100%;
+        height: 30px;
+        @include center;
+        position: absolute;
+        bottom: 0;
+        background-color: black;
+        color: white;
+        text-align: center;
+        font-family: $font;
+    }
     .left{
         @include center;
         justify-content: space-around;
