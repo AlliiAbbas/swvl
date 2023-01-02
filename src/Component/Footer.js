@@ -70,7 +70,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className='developed'><p>Developed by: Eng.aliabbas@gmail.com</p></div>
+      <div className='developed'><p>Developed by: Eng.aliiabbas@gmail.com</p></div>
     </div>
   )
 }
